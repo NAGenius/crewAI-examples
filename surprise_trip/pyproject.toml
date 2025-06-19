@@ -1,0 +1,20 @@
+[project]
+name = "surprise_travel"
+version = "0.1.0"
+description = "surprise-travel using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.130.0,<1.0.0"
+]
+
+[project.scripts]
+surprise_travel = "surprise_travel.main:run"
+train = "surprise_travel.main:train"
+run_crew = "surprise_travel.main:run"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
